@@ -1,0 +1,72 @@
+.about-header-main {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+}
+.about-header-logo-img img {
+  width: 60px;
+  height: 60px;
+}
+
+.about-header-navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//@at-root
+.about-header-main .about-header-navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-header-main .about-header-navbar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.643);
+  font-size: 20px;
+  font-weight: 800;
+}
+.about-header-main .about-header-navbar ul li a:hover {
+  color: white;
+  transition: all 0.4 ease-in-out;
+}
+.about-header-main .about-header-logo-img img {
+  width: 60px;
+  height: 60px;
+}
+
+.about-header-main .about-header-language ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  gap: 7px;
+}
+.about-header-main .about-header-language ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.374);
+  font-size: 20px;
+  font-weight: 600;
+}
+.about-header-main .about-header-language .lang-ru {
+  color: rgb(209, 4, 4);
+}
+.about-header-main .about-header-language .lang-ru:hover {
+  color: red;
+  transition: all 0.4 ease-in-out;
+}
+.about-header-main .about-header-language .lang-en:hover {
+  color: white;
+  transition: all 0.4 ease-in-out;
+}
+
+.about-header-navbar {
+  margin-top: 1rem;
+}
+
+.about-header-language {
+  margin-top: 1rem;
+}
