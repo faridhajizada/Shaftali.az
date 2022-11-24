@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10vmin;
+  margin: 0 50px;
   overflow: hidden;
   transform: skew(5deg);
 
@@ -58,7 +58,8 @@
   }
 }
 
-.third-header {
+.third-header h3 {
+  padding-top: 60px;
   font-size: 60px;
   display: flex;
   justify-content: center;
@@ -69,5 +70,16 @@
   -webkit-text-fill-color: black;
   font-family: poppins;
   cursor: default;
- 
+}
+@media only screen and (max-width: 500px) {
+  .third-header h3 {
+    font-size: 35px;
+  }
+  .container3{
+    padding-top: 120px;
+  }
+  
+  .container3 .card333 .card__head {
+    padding: 0;
+  }
 }

@@ -40,4 +40,29 @@ $(".counter").each(function () {
 
 
 
-//card
+//animation
+let words = ["Oyun", "Reklam", "Veb-sayt", "Mobil tetbiq"];
+let i = 0;
+function myFunc() {
+  if (i == 4) {
+    i = 0;
+  }
+  let element;
+  if (i % 2 == 0) {
+    element = document.getElementById("e2");
+  } else {
+    element = document.getElementById("e1");
+  }
+  // console.log(element);
+  // console.log(words[i]);
+  element.innerHTML = words[i];
+  i++;
+}
+myFunc();
+setInterval(myFunc, 1200);
+
+///
+let firstObj={name:"Farid"}
+let secondObj=firstObj
+firstObj={name:"Sagol"}
+console.log(secondObj.name)
