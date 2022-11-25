@@ -37,18 +37,15 @@ $(".counter").each(function () {
     }
   );
 });
-
-
-
 //animation
 let words = ["Oyun", "Reklam", "Veb-sayt", "Mobil tetbiq"];
 let i = 0;
 function myFunc() {
-  if (i == 4) {
+  if (i === 4) {
     i = 0;
   }
   let element;
-  if (i % 2 == 0) {
+  if (i % 2 === 0) {
     element = document.getElementById("e2");
   } else {
     element = document.getElementById("e1");
@@ -59,10 +56,7 @@ function myFunc() {
   i++;
 }
 myFunc();
-setInterval(myFunc, 1200);
+setInterval(myFunc, 2200);
 
 ///
-let firstObj={name:"Farid"}
-let secondObj=firstObj
-firstObj={name:"Sagol"}
-console.log(secondObj.name)
+///owl carousel

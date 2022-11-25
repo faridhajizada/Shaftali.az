@@ -21,8 +21,8 @@
 ///
 ///
 .Carousel {
-  height: 400px;
-  width: 100%;
+  height: 300px;
+  width: 98%;
 }
 .Carousel-card {
   align-items: center;
@@ -31,60 +31,62 @@
   color: black;
   display: flex;
   flex-shrink: 0;
-  height: 100%;
   justify-content: center;
   margin: 0 20px;
   scroll-snap-align: center;
   width: 270px;
   border: 3px solid red;
+  height: 300px;
 }
 .Carousel-inner {
   display: flex;
-  height: 330px;
+  height: 300px;
   overflow-x: scroll;
-  padding: 20px;
+
   scroll-snap-type: x mandatory;
   width: 100%;
 
   img {
-    height: 330x;
+    height: 300px;
     width: 270px;
   }
 }
 
-.about-us-second-flegri-1{
+.about-us-second-flegri-1 {
   font-size: 40px;
   color: white;
-
   -webkit-text-stroke: 1px #ffffff;
   color: black;
   margin-bottom: 0px;
   line-height: 25px;
   font-family: poppins;
   opacity: 0.3;
+  cursor: default;
 }
 
 .about-us-second-flegri-2 {
   display: block;
   font-size: 40px;
   color: white;
- font-family: poppins;
+  font-family: poppins;
   -webkit-text-stroke: 1px #ffffff;
   color: black;
   margin-bottom: 0px;
   opacity: 0.2;
+  cursor: default;
 }
 
 .about-us-second-flegri-3 {
   display: block;
   font-size: 40px;
   color: white;
- font-family: poppins;
+  font-family: poppins;
   -webkit-text-stroke: 1px #ffffff;
   color: black;
   margin-bottom: 0px;
   opacity: 0.1;
   line-height: 25px;
+  cursor: default;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -104,3 +106,8 @@
     padding: 50px;
   }
 }
+
+.about-us-second-footer {
+  padding-top: 30px;
+}
+

@@ -72,3 +72,50 @@
   font-size: 25px;
   font-weight: 800;
 }
+
+@media only screen and (max-width: 969px) {
+  .header-main {
+    display: none;
+  }
+
+  .header-mobil {
+    display: block;
+  }
+}
+@media only screen and (min-width: 969px) {
+  .header-main {
+    display: block;
+  }
+  .header-mobil {
+    display: none;
+  }
+
+ 
+}
+
+.header-mobil {
+ position: fixed;
+ width: 100%;
+ bottom: 0;
+ background-color: black;
+
+  .row {
+    height: 100px;
+  }
+  i {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  hr {
+    color: red;
+    height: 15px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
