@@ -457,10 +457,25 @@ use {
 }
 @media only screen and (max-width: 375px) {
   .second-counter .counter {
-    padding-top: 100px;
+    padding-top: 10px;
   }
   .second-h1 h1 {
     font-size: 17px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .second-h1 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .second-h1-mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .second-counter .counter {
+    padding-top: 20px;
   }
 }
 .third {
