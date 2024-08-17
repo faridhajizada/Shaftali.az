@@ -552,7 +552,7 @@ use {
 }
 
 .about-us-header-p {
-  padding: 100px 0 0 0;
+  padding: 60px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -566,7 +566,7 @@ use {
 }
 
 .about-us-main-p {
-  padding: 110px 0 0 0;
+  padding: 40px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -830,6 +830,164 @@ use {
   }
   .header-mobil {
     display: none;
+  }
+}
+#contact {
+  background-color: black;
+  height: 100vh;
+}
+#contact input {
+  background-color: #372170;
+  border: 1px solid #4b3583;
+}
+#contact .single-box {
+  border: 1px solid #e2dafb;
+  border-radius: 20px;
+  margin-top: 30px;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding: 25px;
+}
+#contact .contact-text {
+  font-size: 40px;
+  font-weight: 200;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+#contact .text-area {
+  font-size: 24px;
+  line-height: 31.2px;
+  margin-top: -6px;
+  color: white;
+}
+#contact .email {
+  margin-right: 30px;
+  margin-left: 20px;
+}
+#contact .phone {
+  margin-right: 30px;
+  margin-left: 20px;
+}
+#contact .social {
+  display: block;
+  color: white;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+#contact .icons-decoration {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-left: -40px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#contact form {
+  border: 1px solid #4b3583;
+  border-radius: 60px;
+  padding: 20px;
+  background-color: #2c1860;
+}
+#contact button {
+  text-align: center;
+  border-radius: 17px;
+  background-color: #ff7a1f;
+  width: 200px;
+  height: 60px;
+  text-shadow: #ff7a1f;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid #ff7a1f;
+  margin-bottom: 10px;
+}
+#contact .name {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #2c1860;
+  border: 1px solid white;
+}
+#contact .email1 {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #2c1860;
+  border: 1px solid white;
+  margin-top: 5px;
+}
+#contact .subject {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #2c1860;
+  border: 1px solid white;
+  margin-top: 5px;
+}
+#contact .message1 {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #2c1860;
+  border: 1px solid white;
+  margin-top: 5px;
+}
+#contact label {
+  color: white;
+  font-weight: 800;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .single.input {
+    padding: 20px;
+  }
+  #contact .name {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #2c1860;
+    border: 1px solid white;
+  }
+  #contact .email1 {
+    width: 100%;
+  }
+  #contact .subject {
+    width: 100%;
+  }
+  #contact .message1 {
+    width: 100%;
+  }
+  #contact .contact-text {
+    text-align: center;
+  }
+  #contact .social {
+    text-align: center;
+  }
+  #contact input,
+  #contact textarea {
+    padding: 9px 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #ebe5ff;
+    border: 1px solid #cdc7e0;
+    outline-color: transparent;
+  }
+  #contact .email {
+    width: 50px;
+    height: 50px;
+  }
+  #contact h5 {
+    font-size: 20px;
+  }
+  #contact p {
+    font-size: 18px;
   }
 }
 @font-face {
