@@ -38,25 +38,29 @@ $(".counter").each(function () {
   );
 });
 //animation
-let words = ["Oyun", "Reklam", "Veb-sayt", "Mobil tetbiq"];
+const words = [
+  "Game",
+  "Advertisement",
+  "Website",
+  "Mobile App",
+  "Social Media",
+  "E-commerce",
+  "Blog",
+  "Online Course",
+  "Virtual Reality",
+  "Cloud Service",
+];
+
 let i = 0;
+
 function myFunc() {
-  if (i === 4) {
-    i = 0;
-  }
-  let element;
-  if (i % 2 === 0) {
-    element = document.getElementById("e2");
-  } else {
-    element = document.getElementById("e1");
-  }
-  // console.log(element);
-  // console.log(words[i]);
-  element.innerHTML = words[i];
-  i++;
+  document.getElementById("e1").innerHTML = words[i];
+  document.getElementById("e2").innerHTML = words[(i + 1) % words.length];
+  i = (i + 1) % words.length;
 }
+
 myFunc();
-setInterval(myFunc, 2200);
+setInterval(myFunc, 4000);
 
 ///
 ///owl carousel

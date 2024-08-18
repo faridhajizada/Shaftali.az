@@ -1,158 +1,138 @@
-.main-title {
-  padding: 50px 0 0 80px;
-  .red-title {
-    color: #dd0103;
-    font-size: 90px;
-    font-weight: 700;
-    line-height: 70px;
-  }
-
-  .white-title {
-    color: white;
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 70px;
-  }
-}
-.first-infinity {
-  padding: 150px 80px 0 0px;
-
-  svg {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .red-title,
-  .white-title {
-    padding: 20px 0 0 0;
-    font-size: 70px !important;
-    line-height: 50px !important;
-    text-align: center;
-  }
+.first-page {
   .main-title {
-    padding: 60px 0 0 0;
+    padding: 50px 0 0 80px;
+    .red-title {
+      color: #dd0103;
+      font-size: 90px;
+      font-weight: 700;
+      line-height: 70px;
+    }
+
+    .white-title {
+      color: white;
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 70px;
+    }
   }
   .first-infinity {
-    padding: 80px 60px 0 0px;
-  }
-}
+    padding: 150px 80px 0 0px;
 
-//animatoion text first page
-#container11 {
-  color: #999;
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: bold;
-  padding-top: 50px;
-  padding-left: 60px;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-  width: 100%;
-  bottom: 45%;
-  display: block;
-  p {
-    // position:fixed;
-    width: 100%;
-    bottom: 20px;
-    font-size: 12px;
-    color: #999;
+  @media only screen and (max-width: 767px) {
+    .red-title,
+    .white-title {
+      padding: 20px 0 0 0;
+      font-size: 70px !important;
+      line-height: 50px !important;
+      text-align: center;
+    }
+    .main-title {
+      padding: 60px 0 0 0;
+    }
+    .first-infinity {
+      padding: 80px 60px 0 0px;
+    }
   }
-}
 
-#flip {
-  height: 45px;
-  overflow: hidden;
-}
-
-#flip > div > div {
-  color: #fff;
-  padding: 0px 0px;
-  height: 45px;
-  margin-bottom: 45px;
-
-  display: inline-block;
-}
-
-#flip div:first-child {
-  animation: show 4s linear infinite;
-}
-
-#flip div:first-child div {
-  background: #4ec7f3;
-}
-#flip div:last-child div {
-  background: #dd0103;
-}
-
-@keyframes show {
-  0% {
-    margin-top: -270px;
-  }
-  5% {
-    margin-top: -180px;
-  }
-  33% {
-    margin-top: -180px;
-  }
-  38% {
-    margin-top: -90px;
-  }
-  66% {
-    margin-top: -90px;
-  }
-  71% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
+  //animatoion text first page
   #container11 {
-    display: none;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 60px;
+    width: 100%;
+    bottom: 45%;
+    display: block;
   }
-}
 
-// @media only screen and (max-width: 1150px) {
-//   .first-infinity{
-//    display: none;
+  #flip {
+    height: 45px;
+    width: 420px;
+    overflow: hidden;
+    position: relative;
+  }
 
-//   }
-// }
+  #flip > div > div {
+    color: #fff;
+    padding: 0;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 45px;
+  }
 
-// @media only screen and (max-width: 600) {
-//   .first-infinity{
-//    display: block;
+  #flip div:first-child div {
+    background: #4ec7f3;
+  }
 
-//   }
-// }
-svg {
-  // width: 100%;
-  // height: 500px;
-  transform: rotate(315deg);
+  #flip div:last-child div {
+    background: #dd0103;
+  }
 
-  border-radius: 3px;
-  box-shadow: 2px 2px 5px #000;
-  background: rgb(0, 0, 0);
-  fill: none;
-  stroke: rgb(0, 0, 0);
-  stroke-linecap: round;
-  stroke-width: 4%;
-  // margin-left: -160px;
-}
+  @keyframes show {
+    0%,
+    20% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    25%,
+    75% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80%,
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
 
-use {
-  stroke: #dd0103;
-  animation: a 4s linear infinite;
-}
+  #e1 {
+    animation: show 4s linear infinite;
+  }
 
-@keyframes a {
-  to {
-    stroke-dashoffset: 0px;
+  #e2 {
+    animation: show 4s linear infinite 2s;
+  }
+
+  @media only screen and (max-width: 500px) {
+    #container11 {
+      display: none;
+    }
+  }
+
+  svg {
+    transform: rotate(315deg);
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #000;
+    background: rgb(0, 0, 0);
+    fill: none;
+    stroke: rgb(0, 0, 0);
+    stroke-linecap: round;
+    stroke-width: 4%;
+  }
+
+  use {
+    stroke: #dd0103;
+    animation: a 4s linear infinite;
+  }
+
+  @keyframes a {
+    to {
+      stroke-dashoffset: 0px;
+    }
   }
 }
