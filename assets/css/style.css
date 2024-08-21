@@ -260,21 +260,6 @@ header .header-mobil a {
   }
 }
 
-.second-page .title h2 {
-  font-size: 65px;
-  color: white;
-  font-weight: 700;
-  font-family: poppins;
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  color: white;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-fill-color: black;
-  text-align: center;
-  cursor: default;
-}
 .second-page .banner-img img {
   width: 100%;
   height: 580px;
@@ -309,9 +294,6 @@ header .header-mobil a {
   transition: all 0.5s ease-in-out;
 }
 @media only screen and (max-width: 767px) {
-  .second-page .title h2 {
-    font-size: 33px;
-  }
   .second-page .second-counter .counter {
     padding-top: 50px;
     gap: 50px;
@@ -323,9 +305,6 @@ header .header-mobil a {
   }
 }
 @media only screen and (max-width: 500px) {
-  .second-page .title h2 {
-    font-size: 33px;
-  }
   .second-page .banner-img img {
     height: 330px;
   }
@@ -347,10 +326,6 @@ header .header-mobil a {
   }
 }
 @media only screen and (max-width: 376px) {
-  .second-page .title h2 {
-    font-size: 26px;
-    padding-top: 70px;
-  }
   .second-page .banner-img img {
     height: 300px;
   }
@@ -433,24 +408,7 @@ header .header-mobil a {
   margin-right: 1em;
 }
 
-.third-header h3 {
-  padding-top: 100px;
-  font-size: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-fill-color: black;
-  font-family: poppins;
-  cursor: default;
-}
-
 @media only screen and (max-width: 500px) {
-  .third-header h3 {
-    font-size: 35px;
-  }
   .container3 {
     padding-top: 80px;
   }
@@ -469,20 +427,6 @@ header .header-mobil a {
   width: 100%;
   height: 100%;
   background-color: black;
-}
-
-.about-us-header-p {
-  padding: 60px 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  font-weight: 700;
-  -webkit-text-stroke: 1px #ffffff;
-  color: black;
-  font-family: poppins;
-  position: relative;
-  cursor: default;
 }
 
 .about-us-main-p {
@@ -515,12 +459,6 @@ header .header-mobil a {
   text-align: center;
 }
 
-@media only screen and (max-width: 996px) {
-  .about-us-header-p {
-    font-size: 35px;
-    padding: 15px 0 0 0;
-  }
-}
 @media only screen and (max-width: 996px) {
   .about-us-main-p {
     font-weight: 300;
@@ -910,6 +848,69 @@ header .header-mobil a {
     font-size: 18px;
   }
 }
+#structure {
+  background-color: #000000;
+  color: #ffffff;
+  padding-bottom: 160px;
+}
+#structure .box {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+}
+#structure .step-box {
+  padding: 20px;
+  border: 2px solid red;
+  text-align: center;
+  min-height: 200px;
+  height: max-content;
+}
+#structure .step-box h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+#structure .step-box p {
+  font-size: 16px;
+  color: rgba(249, 249, 249, 0.6117647059);
+}
+#structure .arrow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+#structure #structure .box {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+}
+#structure .arrow44 {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  #structure .col {
+    padding-right: calc(var(--bs-gutter-x) * 0.2) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0.2) !important;
+    padding: 0 !important;
+  }
+  #structure .step-box {
+    padding: 12px 4px;
+  }
+  #structure h4 {
+    font-size: 18px;
+  }
+  #structure p {
+    font-size: 12px;
+  }
+  #structure .arrow4 {
+    display: none;
+  }
+  #structure .box {
+    gap: 8px;
+    margin: 10px 0;
+  }
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("/assets/fonts/icomoon.eot?8bv6dj");
@@ -945,4 +946,23 @@ header .header-mobil a {
 
 .icon-home:before {
   content: "\e901";
+}
+
+.title {
+  padding: 100px 0 0 0;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #ffffff;
+  color: black;
+  font-family: poppins;
+  position: relative;
+  cursor: default;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    padding: 40px 0;
+    font-size: 40px;
+  }
 }

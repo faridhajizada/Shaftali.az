@@ -11,6 +11,8 @@
 @import "./about-us/about-header";
 @import "./contact/contact-page";
 
+@import "./portfolio/portfolio";
+
 @font-face {
   font-family: "icomoon";
   src: url("/assets/fonts/icomoon.eot?8bv6dj");
@@ -47,4 +49,25 @@
 }
 .icon-home:before {
   content: "\e901";
+}
+
+
+
+
+.title {
+  padding: 100px 0 0 0;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #ffffff;
+  color: black;
+  font-family: poppins;
+  position: relative;
+  cursor: default;
+}
+@media only screen and (max-width: 767px) {
+  .title {
+    padding: 40px 0;
+    font-size: 40px;
+  }
 }

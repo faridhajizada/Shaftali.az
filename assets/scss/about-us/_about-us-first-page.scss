@@ -6,22 +6,6 @@
   background-color: black;
 }
 
-.about-us-header-p {
-  // margin-top: 100px;
-  padding: 60px 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  font-weight: 700;
-
-  -webkit-text-stroke: 1px #ffffff;
-  color: black;
-  font-family: poppins;
-  position: relative;
-  cursor: default;
-}
-
 .about-us-main-p {
   padding: 40px 0 0 0;
   display: flex;
@@ -49,13 +33,6 @@
     align-items: center;
     width: 80%;
     text-align: center;
-  }
-}
-
-@media only screen and (max-width: 996px) {
-  .about-us-header-p {
-    font-size: 35px;
-    padding: 15px 0 0 0;
   }
 }
 

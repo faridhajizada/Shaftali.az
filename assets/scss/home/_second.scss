@@ -1,20 +1,4 @@
 .second-page {
-  .title h2 {
-    font-size: 65px;
-    color: white;
-    font-weight: 700;
-    font-family: poppins;
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
-    color: white;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: black;
-    text-align: center;
-
-    cursor: default;
-  }
   .banner-img {
     img {
       width: 100%;
@@ -54,9 +38,6 @@
   }
 
   @media only screen and (max-width: 767px) {
-    .title h2 {
-      font-size: 33px;
-    }
     .second-counter .counter {
       padding-top: 50px;
       gap: 50px;
@@ -68,9 +49,6 @@
     }
   }
   @media only screen and (max-width: 500px) {
-    .title h2 {
-      font-size: 33px;
-    }
     .banner-img {
       img {
         height: 330px;
@@ -94,10 +72,6 @@
     }
   }
   @media only screen and (max-width: 376px) {
-    .title h2 {
-      font-size: 26px;
-      padding-top: 70px;
-    }
     .banner-img {
       img {
         height: 300px;
