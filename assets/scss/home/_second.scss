@@ -1,5 +1,5 @@
 .second-page {
-  .second-title h2 {
+  .title h2 {
     font-size: 65px;
     color: white;
     font-weight: 700;
@@ -11,13 +11,14 @@
     -webkit-text-stroke-color: rgb(255, 255, 255);
     -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: black;
+    text-align: center;
 
     cursor: default;
   }
-  .second-img {
+  .banner-img {
     img {
       width: 100%;
-      height: 480px;
+      height: 580px;
     }
   }
   .counter-span-text {
@@ -53,7 +54,7 @@
   }
 
   @media only screen and (max-width: 767px) {
-    .second-title h2 {
+    .title h2 {
       font-size: 33px;
     }
     .second-counter .counter {
@@ -67,43 +68,44 @@
     }
   }
   @media only screen and (max-width: 500px) {
-    .second-title h2 {
-      font-size: 22px;
-      padding-top: 70px;
+    .title h2 {
+      font-size: 33px;
     }
-    .second-img {
+    .banner-img {
       img {
-        padding-top: 30px;
-        height: 380px;
+        height: 330px;
       }
     }
-  }
-  @media only screen and (max-width: 350px) {
-    .second-title h2 {
-      font-size: 22px;
-      padding-top: 70px;
-    }
-    .second-img {
-      img {
-        padding-top: 30px;
-        height: 280px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
     .second-counter .counter {
-      // padding-top: 100px;
-
       font-size: 38px;
       -webkit-text-stroke-color: rgb(255, 255, 255);
       -webkit-text-stroke-width: 1px;
       -webkit-text-fill-color: black;
       font-family: "Montserrat", sans-serif;
     }
+    .counter-span-text {
+      font-size: 10px;
+      margin-top: -10px;
+      margin-left: 10px;
+    }
+    .second-counter {
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
-
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 376px) {
+    .title h2 {
+      font-size: 26px;
+      padding-top: 70px;
+    }
+    .banner-img {
+      img {
+        height: 300px;
+      }
+    }
+    .banner-img {
+      padding-top: 30px;
+    }
     .second-counter .counter {
       padding-top: 80px;
 
@@ -118,46 +120,8 @@
       display: flex;
       justify-content: space-evenly;
     }
-  }
-  @media only screen and (max-width: 500px) {
-    .counter-span-text {
-      font-size: 10px;
-      margin-top: -10px;
-      margin-left: 10px;
-    }
-    .second-counter {
-      display: flex;
-      justify-content: space-evenly;
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
     .second-counter .counter {
       padding-top: 10px;
-    }
-    .second-title h2 {
-      font-size: 17px;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    .second-title h2 {
-      font-size: 33px;
-      word-wrap: break-word;
-      text-align: center;
-      // display: block;
-    }
-  }
-
-  @media only screen and (min-width: 500px) {
-    .second-h1-mobile {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 330px) {
-    .second-counter .counter {
-      padding-top: 20px;
     }
   }
 }

@@ -1,9 +1,10 @@
-@import "./home/header";
 @import "./home/body";
+@import "./home/header";
+
 @import "./home/first";
 @import "./home/second";
 @import "./home/third";
-//about us page
+
 @import "./about-us/about-us-first-page";
 @import "./about-us/about-us-second-page";
 @import "./about-us/about-us-third-page";
@@ -24,7 +25,6 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak-as: never;
   font-style: normal;
@@ -32,8 +32,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

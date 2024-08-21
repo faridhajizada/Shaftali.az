@@ -107,6 +107,7 @@ header {
     width: 100%;
     bottom: 0%;
     background-color: black;
+    z-index: 11111;
 
     .row {
       height: 100px;
@@ -122,7 +123,7 @@ header {
 
     hr {
       color: red;
-      height: 15px;
+      height: 5px;
     }
     a {
       text-decoration: none;

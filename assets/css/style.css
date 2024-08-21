@@ -1,3 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: auto;
+  width: 400vw;
+  display: flex;
+}
+
+.main section {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first-page,
+.second-page,
+.third-page {
+  background-color: rgb(0, 0, 0);
+}
+
 header .header-main {
   background-color: black;
   position: fixed;
@@ -93,6 +119,7 @@ header .header-mobil {
   width: 100%;
   bottom: 0%;
   background-color: black;
+  z-index: 11111;
 }
 header .header-mobil .row {
   height: 100px;
@@ -107,40 +134,10 @@ header .header-mobil i {
 }
 header .header-mobil hr {
   color: red;
-  height: 15px;
+  height: 5px;
 }
 header .header-mobil a {
   text-decoration: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.main {
-  height: auto;
-  width: 400vw;
-  display: flex;
-}
-
-.main section {
-  height: 100vh;
-  width: 100vw;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.first-page,
-.second-page,
-.third-page {
-  background-color: rgb(0, 0, 0);
-}
-
-.second-page {
-  background-color: salmon;
 }
 
 .first-page .content {
@@ -159,7 +156,7 @@ header .header-mobil a {
   line-height: 110px;
 }
 .first-page .first-infinity {
-  padding: 160px 0px 0 0px;
+  padding: 360px 0px 0 0px;
 }
 .first-page .first-infinity svg {
   width: 100%;
@@ -263,7 +260,7 @@ header .header-mobil a {
   }
 }
 
-.second-page .second-title h2 {
+.second-page .title h2 {
   font-size: 65px;
   color: white;
   font-weight: 700;
@@ -275,11 +272,12 @@ header .header-mobil a {
   -webkit-text-stroke-color: rgb(255, 255, 255);
   -webkit-text-stroke-width: 1px;
   -webkit-text-fill-color: black;
+  text-align: center;
   cursor: default;
 }
-.second-page .second-img img {
+.second-page .banner-img img {
   width: 100%;
-  height: 480px;
+  height: 580px;
 }
 .second-page .counter-span-text {
   color: white;
@@ -311,7 +309,7 @@ header .header-mobil a {
   transition: all 0.5s ease-in-out;
 }
 @media only screen and (max-width: 767px) {
-  .second-page .second-title h2 {
+  .second-page .title h2 {
     font-size: 33px;
   }
   .second-page .second-counter .counter {
@@ -325,26 +323,12 @@ header .header-mobil a {
   }
 }
 @media only screen and (max-width: 500px) {
-  .second-page .second-title h2 {
-    font-size: 22px;
-    padding-top: 70px;
+  .second-page .title h2 {
+    font-size: 33px;
   }
-  .second-page .second-img img {
-    padding-top: 30px;
-    height: 380px;
+  .second-page .banner-img img {
+    height: 330px;
   }
-}
-@media only screen and (max-width: 350px) {
-  .second-page .second-title h2 {
-    font-size: 22px;
-    padding-top: 70px;
-  }
-  .second-page .second-img img {
-    padding-top: 30px;
-    height: 280px;
-  }
-}
-@media only screen and (max-width: 500px) {
   .second-page .second-counter .counter {
     font-size: 38px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
@@ -352,8 +336,27 @@ header .header-mobil a {
     -webkit-text-fill-color: black;
     font-family: "Montserrat", sans-serif;
   }
+  .second-page .counter-span-text {
+    font-size: 10px;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+  .second-page .second-counter {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 376px) {
+  .second-page .title h2 {
+    font-size: 26px;
+    padding-top: 70px;
+  }
+  .second-page .banner-img img {
+    height: 300px;
+  }
+  .second-page .banner-img {
+    padding-top: 30px;
+  }
   .second-page .second-counter .counter {
     padding-top: 80px;
     font-size: 38px;
@@ -366,41 +369,8 @@ header .header-mobil a {
     display: flex;
     justify-content: space-evenly;
   }
-}
-@media only screen and (max-width: 500px) {
-  .second-page .counter-span-text {
-    font-size: 10px;
-    margin-top: -10px;
-    margin-left: 10px;
-  }
-  .second-page .second-counter {
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-@media only screen and (max-width: 375px) {
   .second-page .second-counter .counter {
     padding-top: 10px;
-  }
-  .second-page .second-title h2 {
-    font-size: 17px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .second-page .second-title h2 {
-    font-size: 33px;
-    word-wrap: break-word;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 500px) {
-  .second-page .second-h1-mobile {
-    display: none;
-  }
-}
-@media only screen and (max-width: 330px) {
-  .second-page .second-counter .counter {
-    padding-top: 20px;
   }
 }
 
@@ -412,17 +382,17 @@ header .header-mobil a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 50px;
+  margin: 70px;
   overflow: hidden;
   transform: skew(5deg);
 }
-.container3 .card333 {
+.container3 .cardBox {
   flex: 1;
   transition: all 1s ease-in-out;
   height: 75vmin;
   position: relative;
 }
-.container3 .card333 .card__head {
+.container3 .cardBox .card__head {
   color: hsl(0, 0%, 100%);
   background: rgba(221, 1, 5, 0.4274509804);
   padding: 0.5em;
@@ -438,13 +408,13 @@ header .header-mobil a {
   white-space: nowrap;
   font-family: poppins;
 }
-.container3 .card333:hover {
+.container3 .cardBox:hover {
   flex-grow: 10;
 }
-.container3 .card333:hover img {
+.container3 .cardBox:hover img {
   filter: grayscale(0);
 }
-.container3 .card333:hover .card__head {
+.container3 .cardBox:hover .card__head {
   text-align: center;
   top: calc(100% - 2em);
   color: white;
@@ -452,19 +422,19 @@ header .header-mobil a {
   font-size: 30px;
   transform: rotate(0deg) skew(-5deg);
 }
-.container3 .card333 img {
+.container3 .cardBox img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 1s ease-in-out;
   filter: grayscale(100%);
 }
-.container3 .card333:not(:nth-child(5)) {
+.container3 .cardBox:not(:nth-child(5)) {
   margin-right: 1em;
 }
 
 .third-header h3 {
-  padding-top: 60px;
+  padding-top: 100px;
   font-size: 60px;
   display: flex;
   justify-content: center;
@@ -482,14 +452,14 @@ header .header-mobil a {
     font-size: 35px;
   }
   .container3 {
-    padding-top: 120px;
+    padding-top: 80px;
   }
-  .container3 .card333 .card__head {
+  .container3 .cardBox .card__head {
     font-size: 20px;
     padding: 0;
     font-weight: 300;
   }
-  .container3 .card333 .card__head:hover {
+  .container3 .cardBox .card__head:hover {
     font-size: 15px;
   }
 }
@@ -950,7 +920,6 @@ header .header-mobil a {
 }
 [class^=icon-],
 [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak-as: never;
   font-style: normal;
@@ -958,7 +927,6 @@ header .header-mobil a {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
