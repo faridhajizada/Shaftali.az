@@ -1,129 +1,131 @@
-.header-main {
-  background-color: black;
-  position: fixed;
-  width: 100%;
-  bottom: 0%;
-  border-top: 3px solid #4e1f1f;
+header {
+  .header-main {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    border-top: 3px solid #4e1f1f;
 
-  .header-logo-img {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 10px 0 0 0;
-    img {
-      display: block;
-      width: 45px;
-      height: 40px;
-    }
-  }
-  .header-navbar {
-    color: black;
-    margin-top: 15px;
-    ul {
-      list-style-type: none;
+    .header-logo-img {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      li a {
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.643);
-        font-size: 20px;
-        font-weight: 800;
+      justify-content: center;
+      text-align: center;
+      img {
+        margin: 1rem 0;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+    .header-navbar {
+      margin: 1rem 0;
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li a {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.643);
+          font-size: 20px;
+          font-weight: 800;
 
-        p {
-          margin: 0;
+          p {
+            margin: 0;
+          }
+        }
+        a:hover {
+          color: white;
+          transition: all 0.4 ease-in-out;
         }
       }
-      a:hover {
-        color: white;
+    }
+    .header-language {
+      margin: 1rem 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: end;
+      p {
+        color: rgb(209, 4, 4);
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      p:hover {
+        color: red;
         transition: all 0.4 ease-in-out;
       }
     }
   }
-  .header-language {
-    margin-top: 15px;
-    list-style-type: none;
-    display: flex;
-    justify-content: end;
-    p {
-      color: rgb(209, 4, 4);
-      font-size: 20px;
-      font-weight: 600;
-    }
-    p:hover {
-      color: red;
-      transition: all 0.4 ease-in-out;
-    }
-  }
-}
 
-.header-main
-  .header-language
-  .lang-ru
   .header-main
-  .header-language
-  .lang-en:hover {
-  color: white;
-  transition: all 0.4 ease-in-out;
-}
-
-.first-img img {
-  width: 400px;
-  height: 400px;
-}
-
-.first-right-p {
-  color: white;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.first-right-p span {
-  color: red;
-  font-size: 25px;
-  font-weight: 800;
-}
-
-@media only screen and (max-width: 969px) {
-  .header-main {
-    display: none;
-  }
-
-  .header-mobil {
-    display: block;
-  }
-}
-@media only screen and (min-width: 969px) {
-  .header-main {
-    display: block;
-  }
-  .header-mobil {
-    display: none;
-  }
-}
-
-.header-mobil {
-  position: fixed;
-  width: 100%;
-  bottom: 0%;
-  background-color: black;
-
-  .row {
-    height: 100px;
-  }
-  i {
-    font-size: 30px;
+    .header-language
+    .lang-ru
+    .header-main
+    .header-language
+    .lang-en:hover {
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
+    transition: all 0.4 ease-in-out;
   }
 
-  hr {
-    color: red;
-    height: 15px;
+  .first-img img {
+    width: 400px;
+    height: 400px;
   }
-  a {
-    text-decoration: none;
+
+  .first-right-p {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .first-right-p span {
+    color: red;
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  @media only screen and (max-width: 969px) {
+    .header-main {
+      display: none;
+    }
+
+    .header-mobil {
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 969px) {
+    .header-main {
+      display: block;
+    }
+    .header-mobil {
+      display: none;
+    }
+  }
+
+  .header-mobil {
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    background-color: black;
+
+    .row {
+      height: 100px;
+    }
+    i {
+      font-size: 30px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px;
+    }
+
+    hr {
+      color: red;
+      height: 15px;
+    }
+    a {
+      text-decoration: none;
+    }
   }
 }
