@@ -11,6 +11,7 @@
 @import "./about-us/about-header";
 @import "./contact/contact-page";
 
+@import "./services/services";
 @import "./portfolio/portfolio";
 
 @font-face {
@@ -50,9 +51,6 @@
 .icon-home:before {
   content: "\e901";
 }
-
-
-
 
 .title {
   padding: 100px 0 0 0;
