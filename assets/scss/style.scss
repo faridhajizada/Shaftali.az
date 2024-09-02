@@ -4,15 +4,15 @@
 @import "./home/first";
 @import "./home/second";
 @import "./home/third";
+@import "./home/four";
 
 @import "./about-us/about-us-first-page";
-@import "./about-us/about-us-second-page";
-@import "./about-us/about-us-third-page";
 @import "./about-us/about-header";
 @import "./contact/contact-page";
 
 @import "./services/services";
-@import "./portfolio/portfolio";
+@import "./blog/blog";
+@import "./blog/blog-details";
 
 @font-face {
   font-family: "icomoon";
@@ -50,6 +50,10 @@
 }
 .icon-home:before {
   content: "\e901";
+}
+
+main {
+  background-color: black;
 }
 
 .title {
