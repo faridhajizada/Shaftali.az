@@ -1,17 +1,17 @@
 ///home 3 page
-const tl = gsap.timeline();
-tl.fromTo(".second-page", { x: "-100%", y: "+100%" }, { y: 0 });
-tl.fromTo(".third-page", { x: "-100%" }, { x: "-200.32%" });
+// const tl = gsap.timeline();
+// tl.fromTo(".second-page", { x: "-100%", y: "+100%" }, { y: 0 });
+// tl.fromTo(".third-page", { x: "-100%" }, { x: "-200.32%" });
 
-const main = document.querySelector(".main");
-ScrollTrigger.create({
-  animation: tl,
-  trigger: ".site-container",
-  start: "top top",
-  end: () => main.offsetWidth / 2,
-  scrub: true,
-  pin: true,
-});
+// const main = document.querySelector(".main");
+// ScrollTrigger.create({
+//   animation: tl,
+//   trigger: ".site-container",
+//   start: "top top",
+//   end: () => main.offsetWidth / 2,
+//   scrub: true,
+//   pin: true,
+// });
 
 // /counter
 
@@ -39,16 +39,22 @@ $(".counter").each(function () {
 });
 //animation
 const words = [
-  "Game",
-  "Advertisement",
-  "Website",
-  "Mobile App",
-  "Social Media",
-  "E-commerce",
-  "Blog",
-  "Online Course",
-  "Virtual Reality",
-  "Cloud Service",
+  "Oyun",
+  "Reklam",
+  "Veb sayt",
+  "Mobil tətbiq",
+  "Sosial Media",
+  "Elektron ticarət",
+  "Bloq",
+  "Virtual Reallıq",
+  "Bulud xidməti",
+  "SEO",
+  "UI/UX",
+  "Dizayn",
+  "İnternet reklam",
+  "SMM",
+  "İnternet marketinq",
+
 ];
 
 let i = 0;

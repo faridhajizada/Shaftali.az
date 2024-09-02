@@ -6,8 +6,6 @@
 
 .main {
   height: auto;
-  width: 400vw;
-  display: flex;
 }
 
 .main section {
@@ -25,6 +23,7 @@
 }
 
 header .header-main {
+  z-index: 1111111;
   background-color: black;
   position: fixed;
   width: 100%;
@@ -941,14 +940,34 @@ header .header-mobil a {
 }
 #structure .step-box {
   padding: 20px;
-  border: 2px solid red;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #ff4500, #ff0000) 1;
   text-align: center;
   min-height: 200px;
   height: max-content;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+#structure .step-box:hover {
+  transform: translateY(-10px);
+  border-color: #ff8c00;
+}
+#structure .step-box.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease-out;
+}
+#structure .step-box.hidden {
+  opacity: 0;
+  transform: translateY(50px);
 }
 #structure .step-box h4 {
   font-size: 24px;
   margin-bottom: 15px;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+#structure .step-box h4:hover {
+  color: #ff8c00;
 }
 #structure .step-box p {
   font-size: 16px;
@@ -960,17 +979,15 @@ header .header-mobil a {
   text-align: center;
   margin-top: 60px;
 }
-#structure #structure .box {
-  display: flex;
-  gap: 30px;
-  margin: 40px 0;
-}
 #structure .arrow44 {
   display: none;
 }
 @media only screen and (max-width: 767px) {
   #structure .description {
     font-size: 1rem;
+  }
+  #structure .arrow44 {
+    display: block;
   }
   #structure .col {
     padding-right: calc(var(--bs-gutter-x) * 0.2) !important;
