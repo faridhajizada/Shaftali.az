@@ -395,6 +395,9 @@ header .header-mobil a {
   display: none;
 }
 @media only screen and (max-width: 767px) {
+  .third-page #structure .arrow {
+    display: none;
+  }
   .third-page #structure .description {
     font-size: 1rem;
   }
@@ -420,7 +423,7 @@ header .header-mobil a {
   }
   .third-page #structure .box {
     gap: 8px;
-    margin: 10px 0;
+    margin: 10px;
   }
 }
 
