@@ -715,6 +715,10 @@ header .sosial-network li a {
   margin: 0;
   color: #ccc;
 }
+#contact .info-box p a {
+  color: white;
+  text-decoration: none;
+}
 #contact .sosial-network {
   display: flex;
   justify-content: center;
@@ -870,9 +874,10 @@ header .sosial-network li a {
   font-size: 1.5em;
   color: #333333;
 }
-#blog .blog-card .blog-card-content p {
+#blog .blog-card .blog-card-content h3 {
   color: #666666;
   line-height: 1.6;
+  font-size: 16px;
 }
 #blog .blog-card .blog-card-content .blog-detail {
   text-decoration: none;
