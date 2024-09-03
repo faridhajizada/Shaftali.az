@@ -6,6 +6,9 @@
   align-items: center;
   color: white;
   text-align: center;
+  h1{
+    display: none;
+  }
 
   .map-container {
     position: absolute;
@@ -43,7 +46,7 @@
     min-width: 200px;
   }
 
-  .info-box h3 {
+  .info-box h2 {
     margin-bottom: 10px;
     font-size: 1.2em;
     color: #fff;
