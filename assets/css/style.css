@@ -694,6 +694,20 @@ header .header-mobil a {
   margin: 0;
   color: #ccc;
 }
+#contact .sosial-network {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0;
+}
+#contact .sosial-network li {
+  margin: 0 10px;
+  list-style: none;
+}
+#contact .sosial-network li a {
+  color: white;
+  font-size: 1.5em;
+}
 @media (max-width: 768px) {
   #contact .contact-info {
     flex-direction: column;
