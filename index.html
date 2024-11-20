@@ -23,11 +23,16 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="icon" href="./assets/img/fav.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
@@ -38,331 +43,482 @@
   </head>
   <body>
     <header>
-      <div class="header-main">
+      <div id="header-main">
         <div class="container">
-          <div class="row">
-            <div class="col-2">
-              <div class="header-logo-img">
-                <a href="./index.html">
-                  <img src="./assets/img/LogoMark.webp" alt="Shaftali Logo" />
-                </a>
-              </div>
+          <div class="header-content">
+            <div class="header-logo">
+              <a href="./index.html">
+                <img src="./assets//img/Colored02.png" alt="Shaftali Logo" />
+              </a>
             </div>
-            <div class="col-8">
-              <div class="header-navbar">
-                <nav>
-                  <ul>
-                    <li>
-                      <a href="./index.html">Ana səhifə</a>
-                    </li>
-                    <li>
-                      <a href="./services.html">Xidmətlərimiz </a>
-                    </li>
-                    <li>
-                      <a href="./blog.html">Bloq</a>
-                    </li>
-                    <li>
-                      <a href="./about-us.html">Haqqımızda </a>
-                    </li>
-                    <li>
-                      <a href="./contact.html">Əlaqə</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+            <nav class="header-nav">
+              <ul>
+                <li><a href="./index.html">Əsas səhifə</a></li>
+                <li><a href="./about-us.html">Haqqımızda</a></li>
+                <li><a href="./services.html">Xidmətlər</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./blog.html">Bloq</a></li>
+                <li><a href="./contact.html">Əlaqə</a></li>
+              </ul>
+            </nav>
+            <div class="header-appyly">
+              <a href="https://barattson.com/sliders/1715585212.webp"
+                ><button class="header-apply">Qiymət təklifi al</button></a
+              >
             </div>
-            <div class="col-2">
-              <div class="header-language">
-                <ul class="sosial-network">
-                  <li>
-    
-                  </li>
-                  <li>
-                    <a href="https://www.tiktok.com/@shaftali.az"
-                      ><i class="fab fa-tiktok"></i
-                    ></a>
-                  </li>
-
-                  <li>
-                    <a href="https://www.instagram.com/shaftali.az"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/shaftali-az/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-mobil">
-        <div class="container">
-          <div class="row">
-            <div class="col-3">
-              <a href="./index.html"><i class="icon icon-home"></i></a>
-            </div>
-            <div class="col-3">
-              <a href="./about-us.html"><i class="icon icon-info-1"></i></a>
-            </div>
-            <div class="col-3">
-              <a href="./services.html"><i class="icon icon-folder"></i></a>
-            </div>
-            <div class="col-3">
-              <a href="./contact.html"
-                ><i class="icon icon-address-book"></i
-              ></a>
-            </div>
-            <hr />
           </div>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="first-page">
+      <section id="banner-slider">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-md-8 col-12">
-              <div class="content">
-                <div class="main-title">
-                  <h2 class="red-title">SHAFTALI</h2>
-                  <h2 class="white-title">DIGITAL</h2>
-                  <h2 class="white-title">AGENCY</h2>
+            <div class="col-12 p-0">
+              <div class="card-desktop">
+                <h1>Biznesiniz üçün Müasir veb saytların hazırlanması</h1>
+                <p class="banner-desc">
+                  Qısa müddət ərzində istəyinizə uyğun veb saytı ən son
+                  texnologiyalardan istifadə ədərək hazırlayacayıq.!}
+                </p>
+                <div class="my-presents">
+                  <p><i class="fas fa-gift"></i>Domeyn adı Hədiyyə</p>
+                  <p><i class="fas fa-server"></i>Hosting Hədiyyə</p>
+                  <p><i class="fas fa-lock"></i>SSL Sertifikatı Hədiyyə</p>
+                  <p>
+                    <i class="fas fa-chart-line"></i>SEO Optimizasiya Hədiyyə
+                  </p>
                 </div>
-                <div id="container11">
-                  <div id="flip">
-                    <div><div id="e1"></div></div>
-                    <div><div id="e2"></div></div>
-                  </div>
+
+                <div class="button-apply">
+                  <a href="https://barattson.com/sliders/1715585212.webp"
+                    ><button class="banner-apply">Muraciyyet et</button></a
+                  >
+                  <a href="https://barattson.com/sliders/1715585212.webp"
+                    ><button class="banner-apply-light">ishlerimiz</button></a
+                  >
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-12">
-              <div class="first-infinity">
-                <svg
-                  viewBox="-2000 -1000 4000 2000"
-                  aria-labelledby="infinityTitle"
-                >
-                  <title id="infinityTitle">Infinity Symbol Shaftali</title>
-                  <path
-                    id="inf"
-                    d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"
-                  ></path>
-                  <use
-                    xlink:href="#inf"
-                    stroke-dasharray="1570 5143"
-                    stroke-dashoffset="6713px"
-                  ></use>
-                </svg>
+              <div class="banner-img">
+                <img
+                  class="img-fluid"
+                  src="https://static.wixstatic.com/media/cd0898_51a3ca303f5940e28c967bdf5859c8c7~mv2.jpg/v1/fill/w_1920,h_748,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cd0898_51a3ca303f5940e28c967bdf5859c8c7~mv2.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="second-page">
+      <section id="stats-section">
         <div class="container-fluid">
+          <!-- Swiper -->
+          <div class="swiper-container" style="overflow: hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="stat-item mt-2">
+                  <h6>6 Ölkə</h6>
+                  <p>Müştəri bazası</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-item mt-2">
+                  <h6>12 İllik</h6>
+                  <p>Agentlik təcrübəsi</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-item mt-2">
+                  <h6>140+</h6>
+                  <p>Hazırlanan veb sayt</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-item mt-2">
+                  <h6>100%</h6>
+                  <p>Zamanında təhvil</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-item">
+                  <h6>Ən son</h6>
+                  <p>Texnologiyalarla iş</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-item mt-2">
+                  <h6>20+</h6>
+                  <p>Komanda üzvü</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-item mt-2">
+                  <h6>4</h6>
+                  <p>Dəstək verilən dillər</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-item mt-2">
+                  <h6>99%</h6>
+                  <p>Sürətli yüklənmə</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-item mt-2">
+                  <h6>50+</h6>
+                  <p>Strateji tərəfdaşlar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-offer">
+        <div class="container">
+          <h2 class="offer-title">Bizim Təklifimiz</h2>
+          <p class="offer-description">
+            Biz, müştərilərimizin ehtiyaclarına uyğun xüsusi veb saytlar
+            yaradırıq. Hər bir layihə üçün fərdi yanaşma, müasir texnologiyalar
+            və optimallaşdırma ilə biz sizə uğurlu nəticələr təqdim edirik.
+          </p>
+          <div class="offer-cards">
+            <div class="offer-card">
+              <h3>Saytların hazırlanması</h3>
+              <p>
+                Online mağaza, Korporativ saytlar, Xidmət saytları, Elan
+                saytları, Turizm saytlar, Portfel saytları, Bloq saytları
+              </p>
+            </div>
+            <div class="offer-card">
+              <h3>SEO Optimizasiyası</h3>
+              <p>
+                Veb saytınızın axtarış motorlarında ən yaxşı mövqeyə gəlməsi
+                üçün SEO xidmətlərimizdən yararlanın.
+              </p>
+            </div>
+            <div class="offer-card">
+              <h3>Mobil Uyğunlaşdırma</h3>
+              <p>
+                Veb saytınızın hər bir cihazda düzgün işləməsi üçün onu mobil
+                uyğun hala gətiririk.
+              </p>
+            </div>
+            <div class="offer-card">
+              <h3>Texniki Dəstək</h3>
+              <p>
+                Biz, layihə bitdikdən sonra da daimi dəstək və təkmilləşdirmələr
+                təklif edirik.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process-steps">
+        <div class="container">
+          <!-- Текстовая часть с заголовком и описанием -->
           <div class="row">
-            <div class="second-title">
-              <h2 class="title">YARADICILIĞIMIZ SONSUZDUR</h2>
+            <div class="steps-text col-12">
+              <h1 class="title">Veb saytların hazırlanması mərhələləri</h1>
+              <p class="description">
+                Sayt hazırlanması bir neçə əsas mərhələdən ibarətdir. Biz sizin
+                üçün bütün prosesləri asanlaşdırırıq və işinizə dəyər qatırıq.
+              </p>
             </div>
-            <div class="banner-img">
+          </div>
+
+          <!-- Карточки с процессами -->
+          <div class="row g-3">
+            <!-- Добавлен класс g-3 для отступов между колонками -->
+            <div class="step-card col-md-3 col-6">
+              <div class="step-content">
+                <h3>Biznes təhlili</h3>
+                <p>
+                  Biznesin məqsədlərini müəyyənləşdirir, rəqib araşdırması
+                  aparırıq.
+                </p>
+              </div>
+              <div class="step-number">1</div>
+            </div>
+
+            <div class="step-card col-md-3 col-6">
+              <div class="step-content">
+                <h3>Texniki tapşırıq</h3>
+                <p>
+                  Layihənin xüsusiyyətlərini və funksiyalarını təyin edirik.
+                </p>
+              </div>
+              <div class="step-number">2</div>
+            </div>
+
+            <div class="step-card col-md-3 col-6">
+              <div class="step-content">
+                <h3>Saytın dizaynı</h3>
+                <p>
+                  Hədəf auditoriyanız üçün unikal dizayn yaradırıq və
+                  koordinasiya edirik.
+                </p>
+              </div>
+              <div class="step-number">3</div>
+            </div>
+
+            <div class="step-card col-md-3 col-6">
+              <div class="step-content">
+                <h3>Tərtibat</h3>
+                <p>
+                  Layihənin sürətini artırır, cihazlar üçün uyğunlaşdırırıq.
+                </p>
+              </div>
+              <div class="step-number">4</div>
+            </div>
+
+            <div class="step-card col-md-3 col-6">
+              <div class="step-content">
+                <h3>Test</h3>
+                <p>
+                  Layihəni tam sınaqdan keçiririk və çatışmazlıqları düzəldirik.
+                </p>
+              </div>
+              <div class="step-number">5</div>
+            </div>
+
+            <div class="step-card col-md-3 col-6">
+              <div class="step-content">
+                <h3>Dəstək</h3>
+                <p>
+                  Proqramın istifadə qaydalarını öyrədirik və texniki dəstək
+                  veririk.
+                </p>
+              </div>
+              <div class="step-number">6</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio-section">
+        <div class="container">
+          <h2 class="section-title">Sayt hazırlanması - Son işlərimiz</h2>
+          <div class="portfolio-grid">
+            <div class="portfolio-card">
               <img
-                src="./assets/img/2xpng.webp"
-                alt="Banner showing the slogan 'Our Creativity is Infinite' from Shaftali Digital Agency"
-                .
-                class="img-fluid"
+                src="https://shaftali.az/portfolio/1731654260.png"
+                alt="Project 1"
+                class="project-image"
               />
+              <div class="card-content">
+                <h3 class="project-title">Проект 1</h3>
+                <div class="card-footer">
+                  <a href="#" class="view-icon">
+                    <i class="fa fa-eye"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="second-counter">
-              <div class="col-lg-3 col-md-6">
-                <div class="counter" data-count="63">
-                  <span class="counter-span">0</span>
+            <div class="portfolio-card">
+              <img
+                src="https://shaftali.az/portfolio/1731654260.png"
+                alt="Project 2"
+                class="project-image"
+              />
+              <div class="card-content">
+                <h3 class="project-title">Проект 2</h3>
+                <div class="card-footer">
+                  <a href="#" class="view-icon">
+                    <i class="fa fa-eye"></i>
+                  </a>
                 </div>
-                <span class="counter-span-text">Yaradılmış <br />Veb sayt</span>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter" data-count="22">
-                  <span class="counter-span">0</span>
+            </div>
+            <div class="portfolio-card">
+              <img
+                src="https://shaftali.az/portfolio/1731654260.png"
+                alt="Project 3"
+                class="project-image"
+              />
+              <div class="card-content">
+                <h3 class="project-title">Проект 3</h3>
+                <div class="card-footer">
+                  <a href="#" class="view-icon">
+                    <i class="fa fa-eye"></i>
+                  </a>
                 </div>
-                <span class="counter-span-text">Yaradılmış <br />Oyun</span>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter" data-count="128">
-                  <span class="counter-span">0</span>
+            </div>
+            <div class="portfolio-card">
+              <img
+                src="https://shaftali.az/portfolio/1731654260.png"
+                alt="Project 2"
+                class="project-image"
+              />
+              <div class="card-content">
+                <h3 class="project-title">Проект 2</h3>
+                <div class="card-footer">
+                  <a href="#" class="view-icon">
+                    <i class="fa fa-eye"></i>
+                  </a>
                 </div>
-                <span class="counter-span-text">Yaradılmış <br />App</span>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter" data-count="732">
-                  <span class="counter-span">0</span>
+            </div>
+            <div class="portfolio-card">
+              <img
+                src="https://shaftali.az/portfolio/1731654260.png"
+                alt="Project 1"
+                class="project-image"
+              />
+              <div class="card-content">
+                <h3 class="project-title">Проект 1</h3>
+                <div class="card-footer">
+                  <a href="#" class="view-icon">
+                    <i class="fa fa-eye"></i>
+                  </a>
                 </div>
-                <span class="counter-span-text"
-                  >Yaradılmış <br />SEO tetbiq</span
-                >
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <img
+                src="https://shaftali.az/portfolio/1731654260.png"
+                alt="Project 2"
+                class="project-image"
+              />
+              <div class="card-content">
+                <h3 class="project-title">Проект 2</h3>
+                <div class="card-footer">
+                  <a href="#" class="view-icon">
+                    <i class="fa fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <img
+                src="https://shaftali.az/portfolio/1731654260.png"
+                alt="Project 3"
+                class="project-image"
+              />
+              <div class="card-content">
+                <h3 class="project-title">Проект 3</h3>
+                <div class="card-footer">
+                  <a href="#" class="view-icon">
+                    <i class="fa fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <img
+                src="https://shaftali.az/portfolio/1731654260.png"
+                alt="Project 2"
+                class="project-image"
+              />
+              <div class="card-content">
+                <h3 class="project-title">Проект 2</h3>
+                <div class="card-footer">
+                  <a href="#" class="view-icon">
+                    <i class="fa fa-eye"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="third-page">
-        <section id="structure">
-          <div class="container">
-            <h1 class="title">Veb saytların hazırlanması</h1>
-            <p class="description">
-              Sadə proses kimi görünən, ancaq işin mətbəxində böyük bir komanda
-              işinin olduğu veb sayt hazırlanması prosesi müxtəlif mərhələlərdən
-              ibarətdir. Hansı ki, bu, sizin vebsayt üçün xərclərinizi
-              əvvəlcədən effektiv proqnozlaşdırıla bilən ağıllı yatırıma
-              çevirir.
-            </p>
-            <div class="row">
-              <div class="col-md-3 col-6 col">
-                <div class="box">
-                  <div class="step-box">
-                    <h3>Biznes təhlili</h3>
-                    <p>
-                      Biznesin məqsədlərini müəyyənləşdiririk. Rəqib araşdırması
-                      edirik.
-                    </p>
-                  </div>
-                  <div class="arrow">&gt</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-6 col">
-                <div class="box">
-                  <div class="step-box">
-                    <h3>Texniki tapşırıq</h3>
-                    <p>
-                      Biz layihənin bütün xüsusiyyətlərini və funksiyalarını
-                      təyin edirik.
-                    </p>
-                  </div>
-                  <div class="arrow arrow4">&gt</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-6 col">
-                <div class="box">
-                  <div class="step-box">
-                    <h3>Saytın dizaynı</h3>
-                    <p>
-                      Hədəf auditoriyanız üçün unikal dizayn yaradır və
-                      koordinasiya edirik.
-                    </p>
-                  </div>
-                  <div class="arrow">&gt</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-6 col">
-                <div class="box">
-                  <div class="step-box">
-                    <h3>Təkmilləşdirmə</h3>
-                    <p>
-                      Layihənizin məqsədlərini həyata keçirən modulları qururuq.
-                    </p>
-                  </div>
-                  <div class="arrow arrow4 arrow44">&gt</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-6 col">
-                <div class="box">
-                  <div class="step-box">
-                    <h3>Tərtibat</h3>
-                    <p>
-                      Layihənin sürətini artırırıq və bütün cihazlarda işləməyə
-                      uyğunlaşdırırıq.
-                    </p>
-                  </div>
-                  <div class="arrow">&gt</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-6 col">
-                <div class="box">
-                  <div class="step-box">
-                    <h3>Test</h3>
-                    <p>Layihəyə başlayırıq və işi sınaqdan keçiririk.</p>
-                  </div>
-                  <div class="arrow arrow4">&gt</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-6 col">
-                <div class="box">
-                  <div class="step-box">
-                    <h3>Tətbiq</h3>
-                    <p>
-                      Komandanızın daha rahat istifadəsi üçün layihəni
-                      sistemlərinizə inteqrasiya edirik.
-                    </p>
-                  </div>
-                  <div class="arrow">&gt</div>
-                </div>
-              </div>
-              <div class="col-md-3 col-6 col">
-                <div class="box">
-                  <div class="step-box">
-                    <h3>Dəstək</h3>
-                    <p>
-                      Proqramı necə istifadə edəcəyinizi öyrədəcəyik və onun
-                      qurulmasına kömək edəcəyik.
-                    </p>
-                  </div>
-                </div>
-              </div>
+      <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <!-- Логотип и описание компании -->
+            <div class="col-md-4">
+              <div class="footer-logo"></div>
+              <img
+                src="./assets/img/Colored02.png"
+                alt="Logo"
+                class="footer-logo-img"
+              />
+              <p class="footer-description">
+                Shaftali.az - Veb saytlarin yaradılması, SEO, dizayn və digər
+                xidmətlər.
+              </p>
             </div>
-          </div>
-        </section>
-      </section>
 
-      <section class="four-page">
-        <div class="third-header">
-          <h2 class="title">Portfolio</h2>
+            <!-- Ссылки на страницы -->
+            <div class="col-md-2">
+              <h5>Hizmetlər</h5>
+              <ul class="footer-links">
+                <li><a href="#">Veb saytlar</a></li>
+                <li><a href="#">SEO Xidmətləri</a></li>
+                <li><a href="#">Dizayn və İnterfeys</a></li>
+                <li><a href="#">Mobil tətbiqlər</a></li>
+              </ul>
+            </div>
+
+            <!-- Контактная информация -->
+            <div class="col-md-3">
+              <h5>Əlaqə</h5>
+              <ul class="footer-contact">
+                <li>
+                  <a
+                    href="https://www.google.ru/maps/place/Shaftali.az/@40.3754337,49.812284,15z/data=!4m2!3m1!1s0x0:0x18ceac3bc84f609b?sa=X&ved=1t:2428&ictx=111"
+                    target="_blank"
+                  >
+                    <i class="fas fa-map-marker-alt"></i> 5 Bəxtiyar Vahabzadə,
+                    Bakı 1141
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+994773884242"
+                    ><i class="fas fa-phone"></i> +994 77 388 42 42</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@shaftali.az"
+                    ><i class="fas fa-envelope"></i> info@shaftali.az</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Социальные сети -->
+            <div class="col-md-3">
+              <h5>Sosial Şəbəkələr</h5>
+              <ul class="footer-social">
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=994773884242">
+                    <i class="fab fa-whatsapp"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.tiktok.com/@shaftali.az"
+                    ><i class="fab fa-tiktok"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/shaftali.az"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/shaftali-az/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="footer-copyright">
+                © 2024 <a href="https://shaftali.az/">Shaftali.az</a>. Bütün
+                hüquqlar qorunur.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="container3">
-          <div class="cardBox">
-            <a href="https://grandalavip.com/"
-              ><img src="./assets/img/grandala.webp" alt="GrandalaVip Project"
-            /></a>
-            <div class="card__head">
-              <a href="https://grandalavip.com/">grandalavip.com</a>
-            </div>
-          </div>
-          <div class="cardBox">
-            <a href="https://legalway.az/"
-              ><img src="./assets/img/legalway.webp" alt="Legalway Project"
-            /></a>
-            <div class="card__head">
-              <a href="https://legalway.az/">legalway.az</a>
-            </div>
-          </div>
-          <div class="cardBox">
-            <a href="https://bitfinance.az/"
-              ><img src="./assets/img/bitfinance.webp" alt="Bitfinance Project"
-            /></a>
-            <div class="card__head">
-              <a href="https://bitfinance.az/">bitfinance.az</a>
-            </div>
-          </div>
-          <div class="cardBox">
-            <a href="http://asecmc.az/"
-              ><img src="./assets/img/asecmc.webp" alt="Asecmc Project"
-            /></a>
-            <div class="card__head">
-              <a href="http://asecmc.az/">asecmc.az</a>
-            </div>
-          </div>
-          <div class="cardBox">
-            <a href="https://aadt.az/"
-              ><img src="./assets/img/aadt.webp" alt="Aadt Project"
-            /></a>
-            <div class="card__head"><a href="https://aadt.az/">aadt.az</a></div>
-          </div>
-        </div>
-      </section>
+      </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="./assets/Js/script.js"></script>
   </body>

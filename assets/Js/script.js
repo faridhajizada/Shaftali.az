@@ -1,60 +1,35 @@
-
-// /counter
-
-$(".counter").each(function () {
-  var $this = $(this),
-    countTo = $this.attr("data-count");
-
-  $({ countNum: $this.text() }).animate(
-    {
-      countNum: countTo,
-    },
-
-    {
-      duration: 8000,
-      easing: "linear",
-      step: function () {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function () {
-        $this.text(this.countNum);
-        //alert('finished');
-      },
-    }
-  );
+document.addEventListener("DOMContentLoaded", function () {
+  var headerHeight = document.querySelector("#header-main").offsetHeight;
+  document.querySelector("main").style.marginTop = headerHeight + "px";
 });
 
+console.log("Hello World");
 
-//animation
-const words = [
-  "Oyun",
-  "Reklam",
-  "Veb sayt",
-  "Mobil tətbiq",
-  "Sosial Media",
-  "Elektron ticarət",
-  "Bloq",
-  "Virtual Reallıq",
-  "Bulud xidməti",
-  "SEO",
-  "UI/UX",
-  "Dizayn",
-  "İnternet reklam",
-  "SMM",
-  "İnternet marketinq",
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 2000, // Интервал между слайдами в миллисекундах
+    disableOnInteraction: false, // Автоплей не останавливается при взаимодействии
+  },
 
-];
-
-let i = 0;
-
-function myFunc() {
-  document.getElementById("e1").innerHTML = words[i];
-  document.getElementById("e2").innerHTML = words[(i + 1) % words.length];
-  i = (i + 1) % words.length;
-}
-
-myFunc();
-setInterval(myFunc, 4000);
-
-///
-///owl carousel
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    "@0.75": {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    "@1.00": {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    "@1.50": {
+      slidesPerView: 5,
+      spaceBetween: 15,
+    },
+  },
+});

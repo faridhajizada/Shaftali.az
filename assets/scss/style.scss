@@ -1,11 +1,6 @@
 @import "./home/body";
 @import "./home/header";
 
-@import "./home/first";
-@import "./home/second";
-@import "./home/third";
-@import "./home/four";
-
 @import "./about-us/about-us-first-page";
 @import "./about-us/about-header";
 @import "./contact/contact-page";
@@ -52,24 +47,542 @@
   content: "\e901";
 }
 
-main {
-  background-color: black;
-}
+/* Banner-Slider */
+#banner-slider {
+  .row {
+    position: relative;
+  }
+  .banner-apply {
+    background-color: #579e52;
+    border: 1px solid #579e52;
+    color: white;
+    border-radius: 5px;
+    padding: 14px 28px;
+  }
+  // .banner-apply:hover {
+  //   background-color: #ff6f61;
+  //   transition: var(
+  //     --trans1,
+  //     background-color 0.7s ease 0s,
+  //     border-color 0.7s ease 0s
+  //   );
+  //   color: #28a745;
+  //   border: 1px solid #28a745;
+  // }
+  .banner-apply-light {
+    border: none;
+    background-color: #f8f9fa;
+    color: #579e52;
+    border: 1px solid #579e52;
+    border-radius: 5px;
+    padding: 14px 28px;
+  }
 
-.title {
-  padding: 100px 0 0 0;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 700;
-  -webkit-text-stroke: 1px #ffffff;
-  color: black;
-  font-family: poppins;
-  position: relative;
-  cursor: default;
-}
-@media only screen and (max-width: 767px) {
-  .title {
-    padding: 40px 0;
-    font-size: 40px;
+  .banner-apply-light:hover,
+  .banner-apply:hover {
+    background-color: #ff6f61;
+    color: white;
+    border: 1px solid #ff6f61;
+    transition: var(
+      --trans1,
+      border-color 0.7s ease 0s,
+      background-color 0.7s ease 0s
+    );
+  }
+
+  .card-desktop {
+    width: 620px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    border: none;
+    h1 {
+      font-weight: 700;
+      font-size: 50px;
+    }
+  }
+  .banner-desc {
+    margin: 8px 0 15px 0 !important;
+  }
+
+  .row {
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    .card-desktop {
+      position: relative;
+      width: 100%;
+      left: 0;
+      padding: 0 0 0 20px;
+      h1 {
+        font-size: 36px;
+      }
+    }
+    img {
+      display: none;
+    }
+  }
+  .my-presents {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px 0 0 0;
+  }
+  .my-presents p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .my-presents p i {
+    color: #28a745;
+    margin-right: 10px;
+  }
+  .button-apply {
+    margin-top: 50px;
+  }
+  .button-two {
+    display: flex;
+    align-items: end;
+    gap: 20px;
   }
 }
+
+//#our-offer
+#our-offer {
+  background: linear-gradient(
+    135deg,
+    #f5eded,
+    #6482ad
+  ); /* Яркий, но плавный градиент */
+  padding: 60px 0;
+  color: white;
+  .offer-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .offer-description {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+  }
+
+  .offer-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .offer-card {
+    background: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+
+  .offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .offer-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+
+  .offer-card p {
+    color: #7f8c8d;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Добавим цветовой акцент на кнопки или элементы с действиями */
+  .offer-card .cta-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #f39c12; /* Яркий оранжевый */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .offer-card .cta-button:hover {
+    background-color: #e67e22; /* Темный оранжевый при наведении */
+  }
+}
+
+//portfolio-section
+#portfolio-section {
+  padding: 50px 20px;
+  background: linear-gradient(
+    180deg,
+    #f9f5f5,
+    #708aae
+  ); /* Яркий, но плавный градиент */
+  // background: linear-gradient(to bottom left, #ffffff, #f7ecec);
+
+  text-align: center;
+
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: "Arial", sans-serif;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* По умолчанию 4 карточки на десктопе */
+    gap: 20px;
+  }
+  .card-footer {
+    background-color: white;
+    border: none;
+  }
+
+  .portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .card-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .view-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e2dad6;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+  }
+
+  .view-icon:hover {
+    background-color: #7fa1c3;
+    transform: scale(1.1);
+  }
+
+  /* Анимация для карточек */
+  .portfolio-card:hover .view-icon {
+    transform: rotate(360deg);
+  }
+
+  /* Адаптивность для планшетов: 3 карточки */
+  @media (max-width: 1024px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Адаптивность для мобильных: 2 карточки */
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Адаптивность для маленьких телефонов */
+  @media (max-width: 480px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr; /* 1 карточка */
+    }
+  }
+}
+
+// process-steps
+
+#process-steps {
+  margin: 100px 0;
+  .steps-text {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+  }
+
+  /* Cards Layout */
+  .step-card {
+    background: linear-gradient(135deg, #f7c1f0, #b6e2f7);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .step-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .step-content {
+    padding-bottom: 30px;
+    z-index: 2;
+  }
+
+  .step-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .step-content p {
+    font-size: 16px;
+    color: #34495e;
+    line-height: 1.5;
+  }
+
+  /* Style for Step Number */
+  .step-number {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .steps-text {
+      margin-bottom: 30px;
+    }
+
+    .step-card {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* Stats Section */
+#stats-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  text-align: center;
+
+  .swiper-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .stat-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .stat-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .stat-item h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .stat-item p {
+    font-size: 16px;
+    color: #666;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .swiper-container {
+      padding: 0;
+    }
+
+    .stat-item {
+      width: 100%;
+      max-width: 180px; /* Для мобильных устройств сделаем ширину меньше */
+    }
+  }
+  .stat-item {
+    min-height: 100px;
+  }
+}
+
+//footer
+/* Основной стиль футера */
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  .footer-logo-img {
+    max-width: 150px;
+  }
+
+  .footer-description {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  /* Стили для ссылок и контактов */
+  .footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .footer-links li,
+  .footer-contact li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links a,
+  .footer-contact a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+
+  .footer-links a:hover,
+  .footer-contact a:hover {
+    color: #f39c12;
+  }
+
+  /* Социальные иконки */
+  .footer-social li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .footer-social a {
+    color: #ccc;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  .footer-social a:hover {
+    color: #f39c12;
+  }
+
+  /* Copyright */
+  .footer-copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ccc;
+    a {
+      color: white;
+    }
+  }
+
+  /* Адаптивный дизайн */
+  @media (max-width: 768px) {
+    .footer .row {
+      text-align: center;
+    }
+
+    .footer-logo,
+    .footer-contact,
+    .footer-social {
+      margin-top: 20px;
+    }
+
+    .footer-contact {
+      margin-bottom: 20px;
+    }
+  }
+}
+
