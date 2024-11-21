@@ -33,3 +33,17 @@ var swiper = new Swiper(".swiper-container", {
     },
   },
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Swiper(".blog-swiper", {
+    loop: false,
+    autoplay: {
+      delay: 3000, // Задержка между слайдами
+      disableOnInteraction: false,
+    },
+    effect: "slide", // Плавное движение слайдов
+    speed: 600, // Устанавливает плавность перехода (600ms)
+    slidesPerView: 1, // Количество слайдов, отображаемых одновременно
+    spaceBetween: 10, // Расстояние между слайдами
+  });
+});
