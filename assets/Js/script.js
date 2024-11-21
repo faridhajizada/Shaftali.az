@@ -47,3 +47,52 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 10, // Расстояние между слайдами
   });
 });
+
+
+
+
+
+// -------------------  Contact Form  -------------------
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const radioButtons = document.querySelectorAll('input[name="service"]');
+//   const serviceOptions = document.querySelector('.options');
+//   const contactForm = document.getElementById("contact-form");
+//   const submitBtn = document.getElementById("submit-btn");
+
+//   radioButtons.forEach(button => {
+//     button.addEventListener("change", function () {
+//       // Скрываем выбор услуги плавно
+//       serviceOptions.style.opacity = 0;
+//       setTimeout(function () {
+//         serviceOptions.style.display = "none";  // Убираем с экрана после анимации
+//         // Показываем форму
+//         contactForm.style.display = "block";
+//         setTimeout(function () {
+//           contactForm.style.opacity = 1;  // Плавно показываем форму
+//         }, 50);
+//       }, 500);  // Время для плавного исчезновения блока
+//     });
+//   });
+
+//   submitBtn.addEventListener("click", function () {
+//     const name = document.getElementById("name").value;
+//     const phone = document.getElementById("phone").value;
+//     const selectedService = document.querySelector('input[name="service"]:checked');
+
+//     if (name && phone && selectedService) {
+//       alert(`Xidmət: ${selectedService.value}\nAd: ${name}\nTelefon: ${phone}`);
+//       // Логика отправки данных на сервер
+
+//       // Очистка формы
+//       document.getElementById("name").value = "";
+//       document.getElementById("phone").value = "";
+//       contactForm.style.display = "none";  // Скрываем форму
+//       serviceOptions.style.display = "flex";  // Показываем блок с вариантами снова
+//       serviceOptions.style.opacity = 1;  // Плавно показываем блок с услугами
+//     } else {
+//       alert("Zəhmət olmasa xidmət seçin və məlumatları daxil edin.");
+//     }
+//   });
+// });
