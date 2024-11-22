@@ -48,108 +48,13 @@
 }
 
 body {
-  // background-color: #f4f6fa;
+  // background-color: #141414;
+}
+main {
+  margin: 0 !important;
 }
 
-/* Banner-Slider */
-#banner-slider {
-  .row {
-    position: relative;
-  }
-  .banner-apply {
-    background-color: #579e52;
-    border: 1px solid #579e52;
-    color: white;
-    border-radius: 5px;
-    padding: 14px 28px;
-  }
-  // .banner-apply:hover {
-  //   background-color: #ff6f61;
-  //   transition: var(
-  //     --trans1,
-  //     background-color 0.7s ease 0s,
-  //     border-color 0.7s ease 0s
-  //   );
-  //   color: #28a745;
-  //   border: 1px solid #28a745;
-  // }
-  .banner-apply-light {
-    border: none;
-    background-color: #f8f9fa;
-    color: #579e52;
-    border: 1px solid #579e52;
-    border-radius: 5px;
-    padding: 14px 28px;
-  }
 
-  .banner-apply-light:hover,
-  .banner-apply:hover {
-    background-color: #ff6f61;
-    color: white;
-    border: 1px solid #ff6f61;
-    transition: var(
-      --trans1,
-      border-color 0.7s ease 0s,
-      background-color 0.7s ease 0s
-    );
-  }
-
-  .card-desktop {
-    width: 620px;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translateY(-50%);
-    border: none;
-    h1 {
-      font-weight: 700;
-      font-size: 50px;
-    }
-  }
-  .banner-desc {
-    margin: 8px 0 15px 0 !important;
-  }
-
-  .row {
-    width: 100%;
-  }
-  @media only screen and (max-width: 600px) {
-    .card-desktop {
-      position: relative;
-      width: 100%;
-      left: 0;
-      padding: 0 0 0 20px;
-      h1 {
-        font-size: 36px;
-      }
-    }
-    img {
-      display: none;
-    }
-  }
-  .my-presents {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px 0 0 0;
-  }
-  .my-presents p {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-  }
-  .my-presents p i {
-    color: #28a745;
-    margin-right: 10px;
-  }
-  .button-apply {
-    margin-top: 50px;
-  }
-  .button-two {
-    display: flex;
-    align-items: end;
-    gap: 20px;
-  }
-}
 
 //#our-offer
 #our-offer {
@@ -496,7 +401,7 @@ body {
 
 //footer
 #footer {
-  background-color: #333;
+  background-color: #141414;
   color: #fff;
   padding: 40px 0;
   font-family: Arial, sans-serif;

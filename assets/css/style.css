@@ -14,15 +14,10 @@
 
 /* Стили для фиксированного header */
 #header-main {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  margin-top: 20px;
 }
 #header-main .header-apply {
-  background-color: #ff6f61;
+  background-color: #54cc06;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -36,10 +31,14 @@
   background-color: #ff4d3a;
 }
 #header-main .header-content {
+  background: #161618;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 30px 40px;
+  border-radius: 16px;
 }
 #header-main .header-logo img {
   height: 50px;
@@ -55,8 +54,8 @@
 #header-main .header-nav a {
   text-decoration: none;
   font-size: 18px;
-  font-weight: 600;
-  color: #333;
+  font-weight: 200;
+  color: white;
   transition: color 0.3s;
 }
 #header-main .header-nav a:hover {
@@ -548,85 +547,8 @@
   content: "\e901";
 }
 
-/* Banner-Slider */
-#banner-slider .row {
-  position: relative;
-}
-#banner-slider .banner-apply {
-  background-color: #579e52;
-  border: 1px solid #579e52;
-  color: white;
-  border-radius: 5px;
-  padding: 14px 28px;
-}
-#banner-slider .banner-apply-light {
-  border: none;
-  background-color: #f8f9fa;
-  color: #579e52;
-  border: 1px solid #579e52;
-  border-radius: 5px;
-  padding: 14px 28px;
-}
-#banner-slider .banner-apply-light:hover,
-#banner-slider .banner-apply:hover {
-  background-color: #ff6f61;
-  color: white;
-  border: 1px solid #ff6f61;
-  transition: var(--trans1, border-color 0.7s ease 0s, background-color 0.7s ease 0s);
-}
-#banner-slider .card-desktop {
-  width: 620px;
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translateY(-50%);
-  border: none;
-}
-#banner-slider .card-desktop h1 {
-  font-weight: 700;
-  font-size: 50px;
-}
-#banner-slider .banner-desc {
-  margin: 8px 0 15px 0 !important;
-}
-#banner-slider .row {
-  width: 100%;
-}
-@media only screen and (max-width: 600px) {
-  #banner-slider .card-desktop {
-    position: relative;
-    width: 100%;
-    left: 0;
-    padding: 0 0 0 20px;
-  }
-  #banner-slider .card-desktop h1 {
-    font-size: 36px;
-  }
-  #banner-slider img {
-    display: none;
-  }
-}
-#banner-slider .my-presents {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px 0 0 0;
-}
-#banner-slider .my-presents p {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-}
-#banner-slider .my-presents p i {
-  color: #28a745;
-  margin-right: 10px;
-}
-#banner-slider .button-apply {
-  margin-top: 50px;
-}
-#banner-slider .button-two {
-  display: flex;
-  align-items: end;
-  gap: 20px;
+main {
+  margin: 0 !important;
 }
 
 #our-offer {
@@ -920,7 +842,7 @@
 }
 
 #footer {
-  background-color: #333;
+  background-color: #141414;
   color: #fff;
   padding: 40px 0;
   font-family: Arial, sans-serif;
