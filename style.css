@@ -197,30 +197,27 @@ body {
 
 #stats-section {
   .container {
-    padding: 0;
+    padding: 0 !important;
   }
+  .row {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   margin-top: 20px;
-  .stats {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 20px; */
-    .stat-item {
-      background-color: #161618;
-      padding: 30px 40px;
-      margin: 0 10px;
-      border-radius: 16px;
-      margin-top: 20px;
-      text-align: center;
-      p {
-        color: #767f8d;
-      }
-      h6 {
-        color: white;
-        font-size: 26px;
-        font-weight: 900;
-      }
+
+  .stat-item {
+    background-color: #161618;
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    p {
+      color: #767f8d;
+    }
+    h6 {
+      color: white;
+      font-size: 26px;
+      font-weight: 900;
     }
   }
 }
@@ -228,8 +225,11 @@ body {
 /* footer */
 #footer {
   color: #fff;
-  padding: 40px 0;
-  font-family: Arial, sans-serif;
+  padding: 32px 0;
+  .row {
+    padding: 32px;
+  }
+
   /* Логотип и описание */
   .footer-logo-img {
     max-width: 150px;
@@ -237,20 +237,14 @@ body {
 
   .row {
     background-color: #141414;
-  }
-  .footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 40px;
+    border-radius: 20px;
   }
 
   .footer-social {
     list-style: none;
     padding-left: 0;
-  }
-  .footer-social {
     display: flex;
+    justify-content: flex-end;
     gap: 25px;
   }
 
@@ -279,11 +273,23 @@ body {
     transition: color 0.3s;
   }
 
-  /* Copyright */
-  .footer-copyright {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #ccc;
+  .footer-communication-info {
+    /* padding: 20px 60px; */
+    background-color: #1e1f21;
+    border-radius: 20px;
+  }
+  .footer-communication-info a {
+    text-decoration: none;
+    color: #767f8d;
+    gap: 12px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    p {
+      margin: 0 !important;
+      font-size: 18px;
+      color: #eceff3;
+      font-weight: 600;
+    }
   }
 
   /* Адаптивный дизайн */
@@ -294,6 +300,28 @@ body {
 
     .footer-social {
       margin-top: 20px;
+    }
+  }
+  .footer-communication-info a:hover {
+    transition: 0.3s ease all;
+    background-color: #27292b;
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer-communication-info a {
+      text-align: center;
+    }
+    .footer-communication-info a p {
+      font-size: 16px !important;
+      line-height: 24px;
+    }
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+    }
+    .footer-social {
+      display: flex;
+      justify-content: center;
     }
   }
 }
