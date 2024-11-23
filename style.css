@@ -250,6 +250,72 @@ body {
   }
 }
 
+#our-offer {
+  margin: 40px;
+  h2 {
+    color: #eceff3;
+    font-family: Visby CF Bold;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  h6 {
+    color: #eceff3;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .card-row {
+    margin-top: 20px;
+  }
+  .offer-card {
+    background: #161618;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .offer-card:hover {
+    transition: 0.3s ease;
+    background-color: #27292b;
+    i {
+      transition: 0.6s ease;
+      background-color: #fd7304;
+      /* padding: 20px; */
+      border-radius: 50%;
+    }
+  }
+  i {
+    color: white;
+    padding: 16px 20px;
+    font-size: 20px;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    height: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    /* h6 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    i {
+      display: none;
+    }
+    img {
+      height: 130px;
+    }
+    .offer-card {
+      padding: 6px;
+    } */
+  }
+}
+
 /* footer */
 #footer {
   color: #fff;
