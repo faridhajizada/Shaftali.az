@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".blog-swiper", {
     loop: false,
     autoplay: {
-      delay: 3000, // Задержка между слайдами
+      delay: 2500, // Задержка между слайдами
       disableOnInteraction: false,
     },
     effect: "slide", // Плавное движение слайдов
