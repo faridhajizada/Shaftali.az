@@ -757,6 +757,7 @@ body {
 
 #blog {
   h1 {
+    margin-top: 40px;
     color: #eceff3;
   }
   h2 {
@@ -788,6 +789,9 @@ body {
       width: 100%;
       border-radius: 20px;
     }
+
+    text-decoration: none;
+    list-style: none;
   }
   @media screen and (max-width: 768px) {
     h2 {
