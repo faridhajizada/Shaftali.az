@@ -80,7 +80,7 @@ body {
   .container {
     padding: 20px 20px;
     margin-top: 20px;
-    background: #161618;
+    background: #141414;
     border-radius: 20px;
   }
   img {
@@ -756,9 +756,39 @@ body {
 }
 
 #blog {
+  .container {
+    /* margin: 20px 0; */
+
+  }
+  .custom-container {
+    max-width: 800px;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #141414;
+  }
+  .code-visby-body2-medium {
+    color: white;
+  }
+  img {
+    height: 600px;
+    margin: 40px 0;
+    width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    img {
+      height: 300px;
+      margin: 20px 0;
+    }
+  }
   h1 {
     margin-top: 40px;
     color: #eceff3;
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      margin-top: 20px;
+    }
   }
   h2 {
     color: white;
