@@ -45,22 +45,28 @@
             <div class="row">
               <div class="header-content">
                 <div class="header-logo">
-                  <a href="./index.html">
-                    <img src="./assets//img/on dark.png" alt="Shaftali Logo" />
+                  <a href="https://shaftali.az">
+                    <img src="./assets/img/on-dark.webp" alt="Shaftali Logo" />
                   </a>
                 </div>
                 <nav class="header-nav">
                   <ul>
-                    <li><a href="./index.html">Əsas səhifə</a></li>
-                    <li><a href="./about-us.html">Haqqımızda</a></li>
-                    <li><a href="./services.html">Xidmətlər</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li><a href="./blog.html">Bloq</a></li>
-                    <li><a href="./contact.html">Əlaqə</a></li>
+                    <li><a href="https://shaftali.az">Əsas səhifə</a></li>
+                    <li>
+                      <a href="https://shaftali.az/contacts">Haqqımızda</a>
+                    </li>
+                    <li>
+                      <a href="https://shaftali.az/services">Xidmətlər </a>
+                    </li>
+                    <li>
+                      <a href="https://shaftali.az/portfolio">Portfolio</a>
+                    </li>
+                    <li><a href="https://shaftali.az/blogs">Bloq</a></li>
+                    <li><a href="https://shaftali.az/contacts">Əlaqə</a></li>
                   </ul>
                 </nav>
                 <div class="header-appyly">
-                  <a href="https://barattson.com/sliders/1715585212.webp"
+                  <a href="#"
                     ><button class="header-apply">Qiymət təklifi al</button></a
                   >
                 </div>
@@ -69,6 +75,42 @@
           </div>
         </section>
       </div>
+      <div id="header-mobile">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <a href="https://shaftali.az" class="header-mobile-img">
+                <img
+                  src="./assets/img/on-dark.webp"
+                  alt="Header Mobile Image"
+                />
+              </a>
+            </div>
+            <div class="col-6">
+              <div class="menu-icon">
+                <div class="icon-phone">
+                  <a href="tel:+994773884242">
+                    <i class="fas fa-phone-alt"></i>
+                  </a>
+                </div>
+                <div class="icon-menu">
+                  <i class="fas fa-bars"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden">
+        <ul>
+          <li><a href="https://shaftali.az">Əsas səhifə</a></li>
+          <li><a href="https://shaftali.az/contacts">Haqqımızda</a></li>
+          <li><a href="https://shaftali.az/services">Xidmətlər </a></li>
+          <li><a href="https://shaftali.az/portfolio">Portfolio</a></li>
+          <li><a href="https://shaftali.az/blogs">Bloq</a></li>
+          <li><a href="https://shaftali.az/contacts">Əlaqə</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -76,13 +118,14 @@
         <div class="container">
           <div class="row">
             <div class="banner d-flex">
-              <img src="./assets/img/ball orange.png" class="lightImg" alt="" />
+              <img
+                src="./assets/img/ball-orange.webp"
+                class="lightImg"
+                alt="Banner-Animation"
+              />
               <div class="card-desktop">
                 <h1>Biznesiniz üçün Müasir veb saytların hazırlanması</h1>
-                <!-- <p class="banner-desc">
-                  Qısa müddət ərzində istəyinizə uyğun veb saytı ən son
-                  texnologiyalardan istifadə ədərək hazırlayacayıq.!}
-                </p> -->
+
                 <div class="my-presents">
                   <p><i class="fas fa-gift"></i>Domeyn adı Hədiyyə</p>
                   <p><i class="fas fa-server"></i>Hosting Hədiyyə</p>
@@ -102,11 +145,7 @@
                 </div>
               </div>
               <div class="banner-img">
-                <img
-                  src="https://code.edu.az/wp-content/uploads/2024/01/slider1_png.webp"
-                  alt=""
-                  style="height: 400px"
-                />
+                <img src="./assets/img/banner.webp" alt="Banner-img" />
               </div>
             </div>
           </div>
@@ -116,7 +155,11 @@
       <section id="stats-section">
         <div class="container">
           <div class="row">
-            <div class="swiper-container p-0" style="overflow: hidden">
+            <div
+              id="stats-carausel"
+              class="swiper-container p-0"
+              style="overflow: hidden"
+            >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="stat-item">
@@ -312,6 +355,7 @@
           </div>
         </div>
       </section>
+
       <section id="blog-carousel" class="d-flex align-items-center">
         <div class="container">
           <div class="swiper blog-swiper">
@@ -397,6 +441,85 @@
           </div>
         </div>
       </section>
+
+      <section id="team">
+        <div class="container">
+          <div class="row">
+            <div class="title">
+              <h2>Komandamız</h2>
+            </div>
+            <div
+              id="team-carousel"
+              class="swiper-containers p-0"
+              style="overflow: hidden"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/img/Farid.webp"
+                        alt="Farid Hacızada"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-text">
+                      <h6>Farid Hacızada</h6>
+                      <p>Founder & Softaware Engineer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/img/ilkin.webp"
+                        alt="Ilkin Qurbanov"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-text">
+                      <h6>Ilkin Qurbanov</h6>
+                      <p>CTO & Software Engineer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/img/Emil.webp"
+                        alt="Emil Gasarayev"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-text">
+                      <h6>Emil Gasarayev</h6>
+                      <p>Frontend Engineer & SEO Specialist</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="./assets/img/mardan.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-text">
+                      <h6>Mardan Mirzaguliyev</h6>
+                      <p>Data Analyst</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="portfolio">
         <div class="container">
           <div class="row">
@@ -543,17 +666,18 @@
         </div>
       </section>
     </main>
+
     <footer id="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="footer-logo">
+            <a href="https://shaftali.az" class="footer-logo">
               <img
-                src="./assets/img/on dark.png"
+                src="./assets/img/on-dark.webp"
                 alt="Logo"
                 class="footer-logo-img"
               />
-            </div>
+            </a>
           </div>
           <div class="col-md-6">
             <ul class="footer-social">
@@ -593,11 +717,7 @@
                 target="_blank"
                 class="d-flex align-items-center"
               >
-                <img
-                  class="lazy loaded"
-                  src="https://code.edu.az/wp-content/uploads/2024/03/telephone_wht.svg"
-                  alt="Shaftali.az Əlaqə telefon"
-                />
+                <i class="fa-solid fa-phone-volume"></i>
                 <div class="d-flex flex-column">
                   <h6>Əlaqə telefon</h6>
                   <p>+994 77 388 42 42</p>
@@ -612,11 +732,7 @@
                 target="_blank"
                 class="d-flex align-items-center"
               >
-                <img
-                  class="lazy loaded"
-                  src="https://code.edu.az/wp-content/uploads/2024/03/mobile_wht.svg"
-                  alt="shaftali.az Mobil/Whatsapp"
-                />
+                <i class="fa-solid fa-mobile-screen-button"></i>
                 <div class="d-flex flex-column">
                   <h6>Mobil/Whatsapp</h6>
                   <p>+994 77 388 42 42</p>
@@ -631,11 +747,7 @@
                 target="_blank"
                 class="d-flex align-items-center"
               >
-                <img
-                  class="lazy loaded"
-                  src="https://code.edu.az/wp-content/uploads/2024/03/location_wht.svg"
-                  alt="Shaftali.az Location"
-                />
+                <i class="fa-solid fa-location-dot"></i>
                 <div class="d-flex flex-column">
                   <h6>Ünvan</h6>
                   <p>5 Bəxtiyar Vahabzadə, Bakı 1141</p>
