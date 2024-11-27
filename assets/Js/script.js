@@ -89,3 +89,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bannerSlider = document.getElementById("banner-slider");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (bannerSlider && mobileMenu) {
+    const bannerHeight = bannerSlider.offsetHeight;
+    mobileMenu.style.height = `${bannerHeight}px`;
+  }
+});
