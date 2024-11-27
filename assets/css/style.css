@@ -254,15 +254,17 @@
   width: 80%;
 }
 #contact .info-box {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #141414;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 2px solid red;
   flex: 1 1 calc(45% - 40px);
   margin: 10px;
   min-width: 200px;
+}
+#contact .info-box:hover {
+  transition: 0.3s ease;
+  background-color: #27292b;
 }
 #contact .info-box h2 {
   margin-bottom: 10px;

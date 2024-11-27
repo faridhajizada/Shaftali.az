@@ -12,8 +12,8 @@
       name="keywords"
       content="digital agency, web development, game design, mobile apps, SEO, creativity, web design, marketing"
     />
-    <meta name="author" content="Shaftali Digital Agency" />
-    <title>Shaftali Digital Agency</title>
+    <meta name="author" content="Shaftali.az" />
+    <title>Blog Shaftali.az</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -21,6 +21,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -28,95 +34,82 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="./assets/img/fav.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="canonical" href="https://shaftali.az/contact" />
+
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <div class="header-main">
-        <div class="container">
-          <div class="row">
-            <div class="col-2">
-              <div class="header-logo-img">
-                <a href="./index.html">
-                  <img src="./assets/img/LogoMark.webp" alt="Shaftali Logo" />
-                </a>
-              </div>
-            </div>
-            <div class="col-8">
-              <div class="header-navbar">
-                <nav>
+      <div id="header-main">
+        <section class="desktop">
+          <div class="container">
+            <div class="row">
+              <div class="header-content">
+                <div class="header-logo">
+                  <a href="https://shaftali.az">
+                    <img src="./assets/img/on-dark.webp" alt="Shaftali Logo" />
+                  </a>
+                </div>
+                <nav class="header-nav">
                   <ul>
+                    <li><a href="https://shaftali.az">Əsas səhifə</a></li>
                     <li>
-                      <a href="./index.html">Ana səhifə</a>
+                      <a href="https://shaftali.az/contacts">Haqqımızda</a>
                     </li>
                     <li>
-                      <a href="./services.html">Xidmətlərimiz </a>
+                      <a href="https://shaftali.az/services">Xidmətlər </a>
                     </li>
                     <li>
-                      <a href="./blog.html">Bloq</a>
+                      <a href="https://shaftali.az/portfolio">Portfolio</a>
                     </li>
-                    <li>
-                      <a href="./about-us.html">Haqqımızda </a>
-                    </li>
-                    <li>
-                      <a href="./contact.html">Əlaqə</a>
-                    </li>
+                    <li><a href="https://shaftali.az/blogs">Bloq</a></li>
+                    <li><a href="https://shaftali.az/contacts">Əlaqə</a></li>
                   </ul>
                 </nav>
+                <div class="header-appyly">
+                  <a href="#"
+                    ><button class="header-apply">Qiymət təklifi al</button></a
+                  >
+                </div>
               </div>
             </div>
-            <div class="col-2">
-              <div class="header-language">
-                <ul class="sosial-network">
-                  <li></li>
-                  <li>
-                    <a href="https://www.tiktok.com/@shaftali.az"
-                      ><i class="fab fa-tiktok"></i
-                    ></a>
-                  </li>
-
-                  <li>
-                    <a href="https://www.instagram.com/shaftali.az"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/shaftali-az/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </li>
-                </ul>
+          </div>
+        </section>
+      </div>
+      <div id="header-mobile">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <a href="https://shaftali.az" class="header-mobile-img">
+                <img
+                  src="./assets/img/on-dark.webp"
+                  alt="Header Mobile Image"
+                />
+              </a>
+            </div>
+            <div class="col-6">
+              <div class="menu-icon">
+                <div class="icon-phone">
+                  <a href="tel:+994773884242">
+                    <i class="fas fa-phone-alt"></i>
+                  </a>
+                </div>
+                <div class="icon-menu">
+                  <i class="fas fa-bars"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="header-mobil">
-        <div class="container">
-          <div class="row">
-            <div class="col-3">
-              <a href="./index.html"><i class="icon icon-home"></i></a>
-            </div>
-            <div class="col-3">
-              <a href="./about-us.html"><i class="icon icon-info-1"></i></a>
-            </div>
-            <div class="col-3">
-              <a href="./services.html"><i class="icon icon-folder"></i></a>
-            </div>
-            <div class="col-3">
-              <a href="./contact.html"
-                ><i class="icon icon-address-book"></i
-              ></a>
-            </div>
-            <hr />
-          </div>
-        </div>
+      <div id="mobile-menu" class="hidden">
+        <ul>
+          <li><a href="https://shaftali.az">Əsas səhifə</a></li>
+          <li><a href="https://shaftali.az/contacts">Haqqımızda</a></li>
+          <li><a href="https://shaftali.az/services">Xidmətlər </a></li>
+          <li><a href="https://shaftali.az/portfolio">Portfolio</a></li>
+          <li><a href="https://shaftali.az/blogs">Bloq</a></li>
+          <li><a href="https://shaftali.az/contacts">Əlaqə</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -173,5 +166,99 @@
         </div>
       </section>
     </main>
-  </body>
+  <
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="https://shaftali.az" class="footer-logo">
+            <img
+              src="./assets/img/on-dark.webp"
+              alt="Logo"
+              class="footer-logo-img"
+            />
+          </a>
+        </div>
+        <div class="col-md-6">
+          <ul class="footer-social">
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=994773884242"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@shaftali.az" target="_blank">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/shaftali.az" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/shaftali-az/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mt-3">
+          <div class="footer-communication-info">
+            <a
+              href="tel:+994773884242"
+              target="_blank"
+              class="d-flex align-items-center"
+            >
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="d-flex flex-column">
+                <h6>Əlaqə telefon</h6>
+                <p>+994 77 388 42 42</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="footer-communication-info">
+            <a
+              href="https://api.whatsapp.com/send?phone=994773884242"
+              target="_blank"
+              class="d-flex align-items-center"
+            >
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <div class="d-flex flex-column">
+                <h6>Mobil/Whatsapp</h6>
+                <p>+994 77 388 42 42</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="footer-communication-info">
+            <a
+              href="https://www.google.com/maps?q=5+Bəxtiyar+Vahabzadə,+Bakı+1141"
+              target="_blank"
+              class="d-flex align-items-center"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="d-flex flex-column">
+                <h6>Ünvan</h6>
+                <p>5 Bəxtiyar Vahabzadə, Bakı 1141</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/Js/script.js"></script>
+</body>
 </html>
